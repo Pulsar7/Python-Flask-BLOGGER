@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+    {% include '%s'%(heading) %}
+    <body>
+        <div class="heading">
+            <h1>Mein Wissen</h1>
+            <a href="/" id="LINK">Home</a>
+        </div>
+        <div class="content">
+            <div class="container">
+                <form action="create_article" method="POST">
+                    <p><input type="text" name="artikel_name" placeholder="Name des Artikels" required/></p>
+                    <p><input type="text" name="artikel_title" placeholder="Titel des Artikels" required/></p>
+                    <p><input type="text" name="artikel_beschreibung" placeholder="Beschreibung des Artikels" required/></p>
+                    <textarea type="text" name="artikel_inhalt" placeholder="Inhalt des Artikels" required></textarea>
+                    <p><input id="submit" type="submit" value="Veröffentlichen"/></p>
+                </form>
+            </div>
+        </div>
+        {% include '%s'%(footer) %}
+    </body>
+</html>

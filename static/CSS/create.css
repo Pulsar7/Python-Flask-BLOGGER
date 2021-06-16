@@ -1,0 +1,61 @@
+body{
+    background-color: whitesmoke;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+.heading{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.heading h1{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+.content{
+    margin-top: 4%;
+}
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+input{
+    padding: 7px;
+    margin-bottom: 0.3%;
+    width: 70%;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+#submit{
+    padding: 7px;
+    margin-bottom: 0.3%;
+    width: 60%;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.footer{
+    margin-top: 4%;
+    background-color: white;
+    padding: 7px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#LINK{
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 7px;
+    text-decoration: none;
+}

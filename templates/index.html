@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+    {% include '%s'%(index_heading) %}
+    <body>
+        <div class="heading">
+            <h1>Mein Wissen</h1>
+            <h3>Home</h3>
+            <a href="/create" id="LINK">Erstellen</a>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Alle Artikel</h2>
+            </div>
+            {% for ARTIKEL in ALLE_ARTIKEL %}
+                <div class="artikel_container">
+                    <h2>{{ALLE_ARTIKEL[ARTIKEL]['title']}}</h2>
+                    <h3>{{ALLE_ARTIKEL[ARTIKEL]['creation_zeitpunkt']}}</h3>
+                    <p>{{ALLE_ARTIKEL[ARTIKEL]['beschreibung']}}
+                        <a href="{{ALLE_ARTIKEL[ARTIKEL]['weiterlesen_link']}}" id="weiterlesen_link">Weiterlesen</a>
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+        {% include '%s'%(index_footer) %}
+    </body>
+</html>
